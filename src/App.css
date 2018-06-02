@@ -1,0 +1,44 @@
+body {
+  background-color: #eee;
+}
+
+.jumbotron {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.quote-header,
+.quote-item,
+.button {
+  text-align: center;
+}
+
+.header {
+  font-family: 'Cabin', sans-serif;
+
+}
+
+.quote-container {
+  background-color: #fff;
+  background-image: url('./img.jpg');
+  background-position: center 65%;
+  background-size: 100% auto;
+  border: 1px solid #505050;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 30px 20px;
+  min-height: 400px;
+  max-height: 400px;
+}
+
+.quote-item {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.button {
+  margin-top: 20px;
+}
