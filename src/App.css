@@ -40,5 +40,13 @@ body {
 }
 
 .button {
-  margin-top: 20px;
+  margin: 20px 20px;
+}
+
+.credit-blurb {
+  text-align: center;
+}
+
+.fa-github {
+  margin-right: 10px;
 }

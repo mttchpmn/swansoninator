@@ -6,6 +6,7 @@ import _ from 'lodash';
 import QuoteHeader from './components/quote-header';
 import Button from './components/button';
 import QuoteContainer from './components/quote-container';
+import CreditBlurb from './components/credit-blurb';
 
 class App extends Component {
 
@@ -28,13 +29,16 @@ class App extends Component {
     const fetchQuote = _.debounce(() => { this.fetchQuote() }, 300)
     
     return (
-      <div className="app-root container jumbotron text-center">
-        <QuoteHeader headerText="Ron Swanson Quotes" />
+      <div className="app-root">
+        <div className="container jumbotron text-center">
+          <QuoteHeader headerText="Ron Swanson Quotes" />
 
-        <QuoteContainer quoteText={this.state.quote}/>
-        
-        <Button handleClick={fetchQuote} buttonText="Show me another!" />
+          <QuoteContainer quoteText={this.state.quote}/>
+          
+          <Button handleClick={fetchQuote} buttonText="Show me another!" />
         </div>
+          <CreditBlurb />
+      </div>
     );
   }
 }
