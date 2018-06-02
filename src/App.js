@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   fetchQuote() {
-    axios.get('http://ron-swanson-quotes.herokuapp.com/v2/quotes')
+    axios.get('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
     .then(res => this.setState({quote: res.data[0]}));
   }
 
